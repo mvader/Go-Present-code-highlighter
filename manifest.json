@@ -9,7 +9,6 @@
   "page_action": {
     "default_icon":  "icons/icon19.png",
     "default_title": "Go Present code highlight"
-    //"default_popup": "src/popup.html"
   },
 
   "permissions": [
@@ -21,7 +20,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*.slide"],
-      "css": ["lib/hl/styles/solarized-light.css", "src/contentStyle.css"],
+      "css": ["lib/hl/styles/tomorrow-night-eighties.css"],
       "js": ["lib/jquery.min.js", "lib/hl/highlight.pack.js", "src/initHighlight.js"]
     }
   ],
